@@ -1,144 +1,95 @@
 # Bioinformatics Core Toolkit
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Bioinformatics](https://img.shields.io/badge/Field-Bioinformatics-green)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+A Python-based toolkit developed for the implementation and exploration of fundamental bioinformatics workflows, including DNA sequence analysis, FASTA file parsing, mutation detection, and DNA-to-protein translation.
 
-A Python-based bioinformatics toolkit for DNA sequence analysis, mutation detection, FASTA file parsing, and DNA-to-protein translation.
+## Project Overview
 
----
+The increasing integration of computational methods into biological research has made bioinformatics an essential component of modern life sciences. This project was developed as a foundational exercise in applying Python programming to biological sequence analysis and computational biology.
 
-## Overview
+The toolkit implements a collection of commonly used sequence-based operations and serves as a basis for future extensions in genomics, molecular biology, and data-driven biological research.
 
-The **Bioinformatics Core Toolkit** is a beginner-to-intermediate computational biology project designed to demonstrate core bioinformatics workflows using Python.
-
-It focuses on fundamental biological sequence operations commonly used in genomics, molecular biology, and computational biology.
-
----
-
-## Core Features
+## Implemented Features
 
 ### DNA Sequence Analysis
 
 - DNA sequence validation
-- Sequence length calculation
+- Sequence length determination
 - GC content calculation
 - DNA to RNA transcription
 - Reverse complement generation
 
-### Advanced Bioinformatics Utilities
+### Bioinformatics Utilities
 
 - FASTA file parsing
-- Mutation detection between reference and sample DNA sequences
-- DNA to protein translation using the genetic codon table
-
----
-
-## Example Workflow
-
-```python
-from src.dna_tools import DNATools
-
-dna = DNATools("ATGTTTAAAGGG")
-
-print(dna.gc_content())
-print(dna.transcribe())
-print(dna.translate_to_protein())
-```
-
-Expected output:
-
-```text
-33.33
-AUGUUUAAAGGG
-MFKG
-```
-
----
-
-## Mutation Detection Example
-
-```python
-reference = "ATGCGTACCGTAGCTAGC"
-sample = "ATGAGTACCGTGGCTAGC"
-
-mutations = DNATools.detect_mutations(reference, sample)
-print(mutations)
-```
-
-Example output:
-
-```text
-[
-  {'position': 4, 'reference': 'C', 'sample': 'A'},
-  {'position': 12, 'reference': 'A', 'sample': 'G'}
-]
-```
-
----
+- Mutation detection between reference and sample sequences
+- DNA-to-protein translation using the standard genetic code
 
 ## Repository Structure
 
 ```text
 bioinformatics-core-toolkit/
-│
-├── README.md
-├── main.py
-├── LICENSE
-├── .gitignore
-│
-├── src/
-│   └── dna_tools.py
-│
-└── examples/
-    └── sample_sequence.fasta
+
+README.md
+main.py
+LICENSE
+.gitignore
+
+src/
+    dna_tools.py
+
+examples/
+    sample_sequence.fasta
 ```
 
----
+## Example Input
 
-## Scientific Relevance
+```text
+ATGTTTAAAGGG
+```
 
-Sequence analysis is one of the foundations of bioinformatics. Tasks such as GC content analysis, transcription, reverse complement generation, mutation detection, and translation are important in genomics, molecular biology, genetic variation analysis, and computational biology education.
+## Example Output
 
-This project is intended to serve as a foundation for more advanced projects in:
+RNA Transcript:
 
-- Genomics
-- Variant analysis
-- Disease bioinformatics
-- Molecular docking
-- Drug discovery
-- Precision medicine
-- Biomedical data science
+```text
+AUGUUUAAAGGG
+```
 
----
+Protein Translation:
 
-## Technologies Used
+```text
+MFKG
+```
+
+## Technologies
 
 - Python 3
 - Object-Oriented Programming
 - Bioinformatics
 - Computational Biology
-- Genomics
-
----
 
 ## Future Development
 
 Planned extensions include:
 
-- Protein property analysis
-- Open Reading Frame detection
-- Sequence alignment
-- Gene annotation
-- Variant interpretation
-- Genomic data visualization
-- Machine learning integration for biological sequence analysis
-
----
+- Protein sequence analysis
+- Open Reading Frame identification
+- Sequence alignment algorithms
+- Gene annotation utilities
+- Variant analysis workflows
+- Biological data visualisation
+- Machine learning applications for biological sequence data
 
 ## Author
 
-**Ishitta Sarkar**  
-Biotechnology Graduate  
-Interested in Bioinformatics, Computational Biology, Drug Discovery, Precision Medicine, and Biomedical Data Science.
+**Ishitta Sarkar**
+
+B.Tech Biotechnology
+
+Areas of Interest:
+
+- Bioinformatics
+- Computational Biology
+- Drug Discovery
+- Precision Medicine
+- Biomedical Data Science
