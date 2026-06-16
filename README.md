@@ -1,32 +1,115 @@
 # Bioinformatics Core Toolkit
 
-A Python-based bioinformatics toolkit developed for DNA sequence analysis, mutation detection, FASTA file parsing, and protein translation.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Bioinformatics](https://img.shields.io/badge/Field-Bioinformatics-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+A Python-based bioinformatics toolkit for DNA sequence analysis, mutation detection, FASTA file parsing, and DNA-to-protein translation.
 
 ---
 
 ## Overview
 
-This project provides a collection of computational biology tools for analyzing DNA sequences and exploring fundamental bioinformatics workflows.
+The **Bioinformatics Core Toolkit** is a beginner-to-intermediate computational biology project designed to demonstrate core bioinformatics workflows using Python.
 
-The toolkit is designed for students, researchers, and enthusiasts interested in bioinformatics, genomics, and computational biology.
+It focuses on fundamental biological sequence operations commonly used in genomics, molecular biology, and computational biology.
 
 ---
 
-## Features
+## Core Features
 
-### DNA Analysis
+### DNA Sequence Analysis
 
 - DNA sequence validation
 - Sequence length calculation
-- GC content analysis
-- DNA → RNA transcription
+- GC content calculation
+- DNA to RNA transcription
 - Reverse complement generation
 
-### Advanced Features
+### Advanced Bioinformatics Utilities
 
-- FASTA file parser
-- Mutation detection
-- DNA → Protein translation
+- FASTA file parsing
+- Mutation detection between reference and sample DNA sequences
+- DNA to protein translation using the genetic codon table
+
+---
+
+## Example Workflow
+
+```python
+from src.dna_tools import DNATools
+
+dna = DNATools("ATGTTTAAAGGG")
+
+print(dna.gc_content())
+print(dna.transcribe())
+print(dna.translate_to_protein())
+```
+
+Expected output:
+
+```text
+33.33
+AUGUUUAAAGGG
+MFKG
+```
+
+---
+
+## Mutation Detection Example
+
+```python
+reference = "ATGCGTACCGTAGCTAGC"
+sample = "ATGAGTACCGTGGCTAGC"
+
+mutations = DNATools.detect_mutations(reference, sample)
+print(mutations)
+```
+
+Example output:
+
+```text
+[
+  {'position': 4, 'reference': 'C', 'sample': 'A'},
+  {'position': 12, 'reference': 'A', 'sample': 'G'}
+]
+```
+
+---
+
+## Repository Structure
+
+```text
+bioinformatics-core-toolkit/
+│
+├── README.md
+├── main.py
+├── LICENSE
+├── .gitignore
+│
+├── src/
+│   └── dna_tools.py
+│
+└── examples/
+    └── sample_sequence.fasta
+```
+
+---
+
+## Scientific Relevance
+
+Sequence analysis is one of the foundations of bioinformatics. Tasks such as GC content analysis, transcription, reverse complement generation, mutation detection, and translation are important in genomics, molecular biology, genetic variation analysis, and computational biology education.
+
+This project is intended to serve as a foundation for more advanced projects in:
+
+- Genomics
+- Variant analysis
+- Disease bioinformatics
+- Molecular docking
+- Drug discovery
+- Precision medicine
+- Biomedical data science
 
 ---
 
@@ -36,71 +119,26 @@ The toolkit is designed for students, researchers, and enthusiasts interested in
 - Object-Oriented Programming
 - Bioinformatics
 - Computational Biology
-
----
-
-## Example Workflow
-
-DNA Sequence
-
-```text
-ATGTTTAAAGGG
-```
-
-RNA Transcript
-
-```text
-AUGUUUAAAGGG
-```
-
-Protein Translation
-
-```text
-MFKG
-```
-
----
-
-## Repository Structure
-
-```text
-bioinformatics-core-toolkit
-
-README.md
-main.py
-
-src/
-    dna_tools.py
-
-examples/
-    sample_sequence.fasta
-```
+- Genomics
 
 ---
 
 ## Future Development
 
-Planned features include:
+Planned extensions include:
 
 - Protein property analysis
+- Open Reading Frame detection
 - Sequence alignment
 - Gene annotation
-- Variant analysis
+- Variant interpretation
 - Genomic data visualization
-- Machine Learning integration
+- Machine learning integration for biological sequence analysis
 
 ---
 
 ## Author
 
-Ishitta Sarkar
-
-Biotechnology Graduate
-
-Research Interests:
-
-- Bioinformatics
-- Computational Biology
-- Drug Discovery
-- Precision Medicine
-- Biomedical Data Science
+**Ishitta Sarkar**  
+Biotechnology Graduate  
+Interested in Bioinformatics, Computational Biology, Drug Discovery, Precision Medicine, and Biomedical Data Science.
