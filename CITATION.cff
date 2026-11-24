@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Bioinformatics Core Toolkit
+message: If you use this software, please cite it as below.
+type: software
+authors:
+  - family-names: Sarkar
+    given-names: Ishitta
+    orcid: "https://orcid.org/0009-0008-1028-6010"
+    email: ishittas4@gmail.com
+repository-code: "https://github.com/Ishitta-Sarkar/bioinformatics-core-toolkit"
+url: "https://github.com/Ishitta-Sarkar/bioinformatics-core-toolkit"
+license: MIT
+version: 0.2.0
+date-released: 2026-11-24
+keywords:
+  - bioinformatics
+  - dna
+  - sequence-analysis
+abstract: >-
+  From-scratch Python implementations of core DNA operations: GC content,
+  transcription, reverse complement, translation, FASTA parsing, and
+  substitution detection. Results on the bundled HBB coding sequence are
+  cross-checked against Biopython.

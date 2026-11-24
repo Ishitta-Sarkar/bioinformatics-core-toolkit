@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bioinformatics-core-toolkit"
+dynamic = ["version"]
+description = "From-scratch Python implementations of core DNA sequence operations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Ishitta Sarkar", email = "ishittas4@gmail.com"},
+]
+keywords = [
+  "bioinformatics",
+  "dna",
+  "fasta",
+  "sequence-analysis",
+  "translation",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "biopython==1.88",
+  "pytest==9.2.0",
+  "ruff==0.17.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ishitta-Sarkar/bioinformatics-core-toolkit"
+Repository = "https://github.com/Ishitta-Sarkar/bioinformatics-core-toolkit"
+Changelog = "https://github.com/Ishitta-Sarkar/bioinformatics-core-toolkit/blob/main/CHANGELOG.md"
+Citation = "https://github.com/Ishitta-Sarkar/bioinformatics-core-toolkit/blob/main/CITATION.cff"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "src.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.ruff.format]
+# README samples keep the aligned comments from the documented example.
+exclude = ["*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "W"]
