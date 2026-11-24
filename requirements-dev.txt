@@ -1,0 +1,6 @@
+# Pinned tools for tests and linting.
+# Biopython is used only to cross-check results. It is not imported by the toolkit.
+pytest==9.2.0
+biopython==1.88
+numpy==2.2.6
+ruff==0.17.6
