@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460" role="img">
+<title>Base composition of the human HBB coding sequence NM_000518.5:51-494</title>
+<desc>A 88 (19.82%), C 113 (25.45%), G 136 (30.63%), T 107 (24.10%). GC content 56.08% of 444 bp.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="380" y="36" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#1a1a1a">Base composition of the human HBB coding sequence</text>
+<text x="380" y="62" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333333">NM_000518.5:51-494 · 444 bp · GC content 56.08%</text>
+<line x1="72" y1="374.0" x2="728" y2="374.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="378.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">0</text>
+<line x1="72" y1="307.5" x2="728" y2="307.5" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="311.5" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">40</text>
+<line x1="72" y1="241.0" x2="728" y2="241.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="245.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">80</text>
+<line x1="72" y1="174.5" x2="728" y2="174.5" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="178.5" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">120</text>
+<line x1="72" y1="108.0" x2="728" y2="108.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="112.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">160</text>
+<line x1="72" y1="108" x2="72" y2="374" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="72" y1="374" x2="728" y2="374" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="22" y="241.0" transform="rotate(-90 22 241.0)" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">Count</text>
+<rect x="181.0" y="227.7" width="78" height="146.3" fill="#0072B2" rx="3"><title>A: 88 (19.82%)</title></rect>
+<text x="220.0" y="205.7" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">88</text>
+<text x="220.0" y="221.7" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">19.82%</text>
+<text x="220.0" y="398.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a1a">A</text>
+<rect x="301.0" y="186.1" width="78" height="187.9" fill="#E69F00" rx="3"><title>C: 113 (25.45%)</title></rect>
+<text x="340.0" y="164.1" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">113</text>
+<text x="340.0" y="180.1" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">25.45%</text>
+<text x="340.0" y="398.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a1a">C</text>
+<rect x="421.0" y="147.9" width="78" height="226.1" fill="#009E73" rx="3"><title>G: 136 (30.63%)</title></rect>
+<text x="460.0" y="125.9" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">136</text>
+<text x="460.0" y="141.9" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">30.63%</text>
+<text x="460.0" y="398.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a1a">G</text>
+<rect x="541.0" y="196.1" width="78" height="177.9" fill="#D55E00" rx="3"><title>T: 107 (24.10%)</title></rect>
+<text x="580.0" y="174.1" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">107</text>
+<text x="580.0" y="190.1" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">24.10%</text>
+<text x="580.0" y="398.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a1a">T</text>
+<text x="380" y="438" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#555555">Counts from DNATools on examples/sample_sequence.fasta</text>
+</svg>

@@ -1,0 +1,2 @@
+# Runtime dependencies: none. DNATools uses the Python standard library.
+# Test and lint dependencies are listed in requirements-dev.txt.
